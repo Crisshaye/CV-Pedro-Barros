@@ -2,13 +2,8 @@
   command = "npm run build"
   publish = "public"
 
-[[plugins]]
-  package = "@netlify/plugin-gatsby"
-
 [build.environment]
   NODE_VERSION = "20"
 
-# Fix para Tailwind + Gatsby en Netlify
-[build.processing.css]
-  bundle = false
-  minify = false
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
