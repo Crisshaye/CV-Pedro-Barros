@@ -1,12 +1,18 @@
+@reference tailwindcss;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos personalizados opcionales para el CV (puedes agregar más después) */
+/* Tus estilos personalizados con @apply ahora sí funcionan */
 body {
   @apply bg-gray-50 text-gray-900 antialiased;
 }
 
-h1, h2, h3 {
-  @apply font-bold text-gray-800 mb-4;
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-800;
+}
+
+a {
+  @apply text-blue-600 hover:underline;
 }
