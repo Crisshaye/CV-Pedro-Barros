@@ -19,11 +19,6 @@ module.exports = {
       },
       __key: "images"
     },
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [require("@tailwindcss/postcss"), require("autoprefixer")],
-      },
-    }
+    `gatsby-plugin-postcss`,  // Solo esto para v3 – PostCSS maneja Tailwind automáticamente
   ]
 };
